@@ -7,7 +7,7 @@ import Header from './Header';
 describe('Header component', () => {
   let component;
   beforeEach(()=>{
-    component = setupComp(undefined, Header);
+    component = setupComp(Header);
   })
 
   it('Should render without errors', () => {
