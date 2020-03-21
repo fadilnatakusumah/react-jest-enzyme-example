@@ -6,7 +6,6 @@ import { setupComp, findComponent, testStore } from './utils';
 const setupHelper = (initialState = {}) => {
   const store = testStore(initialState);
   const wrapper = setupComp(App, { store }).childAt(0).dive();
-  console.log("wrapper", wrapper.debug())
   return wrapper
 }
 
