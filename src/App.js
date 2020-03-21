@@ -20,7 +20,7 @@ const dummyData = [{
 function App({ getPosts, posts }) {
 
   return (
-    <div className="App">
+    <div className="App" data-test="app-component">
       <Header />
       <Headline
         dummyData={dummyData}
@@ -30,7 +30,7 @@ function App({ getPosts, posts }) {
       <div className="wrapper">
         <SharedButton buttonText="Get Posts" emitEvent={getPosts} />
         {
-          posts.map(post => (<PostItem key={post.id} title={post.title} desc={post.body} />))
+          posts.map(post => (<PostItem key={post.title} title={post.title} desc={post.body} />))
         }
       </div>
     </div>
