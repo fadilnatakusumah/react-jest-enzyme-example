@@ -3,7 +3,7 @@ import thunk from 'redux-thunk';
 
 import rootReducers from '../reducers';
 
-const middlewares = [thunk];
+export const middlewares = [thunk];
 
 const createStoreWithMiddlewares = applyMiddleware(...middlewares)(createStore);
 

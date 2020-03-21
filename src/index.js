@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import App from './App';
 import store from './store';
 
-const AppWrapper = (
+export const AppWrapper = (
     <Provider store={store}>
         <App />
     </Provider>
