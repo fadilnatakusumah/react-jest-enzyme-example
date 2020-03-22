@@ -30,6 +30,10 @@ class App extends React.Component {
     this.setState({ hideBtn: !this.state.hideBtn })
   }
 
+  exampleMethod_returnsValue = (number) => {
+    return number + 1
+  }
+
   getPostsHandler = () => {
     const { getPosts } = this.props;
     getPosts();

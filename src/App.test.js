@@ -33,5 +33,18 @@ describe('App Component', () => {
     // console.log("comp", comp)
     // expect(comp.length).toBe(1);
   });
+
+  it('exampleMethod should update state as expected', () => {
+    const classInstance = wrapper.instance();
+    const beforeUpdate = classInstance.state.hideBtn;
+    classInstance.exampleMethod_updateState();
+    expect(classInstance.state.hideBtn).toBe(!beforeUpdate);
+  })
+
+  it('exampleMethod should return value as expected', () => {
+    const classInstance = wrapper.instance();
+    const value = classInstance.exampleMethod_returnsValue(5);
+    expect(value).toBe(6);
+  })
 })
 
